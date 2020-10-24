@@ -45,14 +45,14 @@ handleSubmit(e){
    const user = data.filter(data=>data.password === pass && data.email ===email);
     
      
-    if(user !== ""){
+    if(user[0]){
         this.setState({
             show1:false,show2:true,wrong:false,name:user[0].name
         })
     }
     else{
         this.setState({
-            show1:false,show2:false,wrong:true
+            wrong:true
         })
     }
 }
@@ -84,15 +84,19 @@ handleSubmit(e){
          </div>
      </form>
      </div>
+     {this.state.wrong?<div className="my-4 text-center">
+         <p style={{color:"red",fontSize:"20px"}}>Wrong Credentials</p>
+     </div>:null}
  </div>
  <div className="col-md-3"></div>
  </div>
+ 
 </div>
 
 :null}
 
 {this.state.show2?<p style={{marginTop:"200px"}}><Submit name={this.state.name} email={this.state.email}/></p>:null}
-{this.state.wrong?<p style={{marginTop:"200px"}}>Bye</p>:null}
+
             </>
         );
     }

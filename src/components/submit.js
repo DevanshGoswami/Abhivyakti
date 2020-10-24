@@ -107,7 +107,7 @@ class Submit extends React.Component{
                <label class="form-check-label" for="inlineRadio1" style={{color:"#13007d"}}>Technical</label>
                </div>
                <div class="form-check form-check-inline">
-               <input class="form-check-input" type="radio" onChange={this.handleChange} name="domain" id="inlineRadio2" value="Non-Technical onChange={this.handleChange}"/>
+               <input class="form-check-input" type="radio" onChange={this.handleChange} name="domain" id="inlineRadio2" value="Non-Technical"/>
                <label class="form-check-label" for="inlineRadio2" style={{color:"#13007d"}}>Non-Technical</label>
                </div>
            <div class="form-group">
