@@ -76,8 +76,8 @@ class Submit extends React.Component{
          return(
              <>
              {this.state.show1?
-            <div className="container" style={{marginTop:"150px"}}>
-            <div className="text-center my-5">
+            <div className="container">
+            <div className="text-center mb-5">
             <h1 style={{color:"#13007d",fontWeight:"800"}}>INSTRUCTIONS</h1>
             </div>
             <div className="row justify-content-center">
@@ -112,12 +112,12 @@ class Submit extends React.Component{
                </div>
            <div class="form-group">
                <label for="exampleFormControlInput1" style={{color:"#13007d"}}>Topic</label>
-               <input type="text" class="form-control" name="topic" onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Android 9.0"/>
+               <input type="text" class="form-control" name="topic" onChange={this.handleChange} id="exampleFormControlInput1" placeholder="Android 9.0" required/>
            </div>
            
            <div class="form-group">
                <label for="exampleFormControlInput2" style={{color:"#13007d"}}>Link to Docx</label>
-               <input type="text" class="form-control" name="link" onChange={this.handleChange} id="exampleFormControlInput2" placeholder="https://docs.google.com/kjaflk"/>
+               <input type="text" class="form-control" name="link" onChange={this.handleChange} id="exampleFormControlInput2" placeholder="https://docs.google.com/kjaflk" required/>
            </div>
            <div className="text-center ">
                        <button type="submit" class="btn btn-primary" style={{background:"#13007d",color:"white"}}>Submit</button>
