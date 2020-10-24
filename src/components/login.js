@@ -73,11 +73,11 @@ handleSubmit(e){
      <form onSubmit={this.handleSubmit}>
          <div class="form-group">
              <label for="exampleInputEmail1" style={{color:"#13007d"}}><strong>Email address</strong></label>
-             <input type="email" name="email" class="form-control" onChange={this.handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+             <input type="email" name="email" class="form-control" onChange={this.handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required/>
          </div>
          <div class="form-group">
              <label for="exampleInputPassword1" style={{color:"#13007d"}}><strong>Password</strong></label>
-             <input type="password" name="password" class="form-control" onChange={this.handleChange} id="exampleInputPassword1" placeholder="Password"/>
+             <input type="password" name="password" class="form-control" onChange={this.handleChange} id="exampleInputPassword1" placeholder="Password" required/>
          </div>
          <div className="text-center ">
          <button type="submit" class="btn btn-link"><i class="fa fa-sign-in" style={{fontSize:"30px",color:"#13007d"}}></i></button>
